@@ -1,0 +1,261 @@
+/** Estrtura do Site */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    background: white url(../imagem/fundo.png) repeat-x;
+}
+
+#container {
+    width: 750px;
+    margin: 0 auto;
+}
+
+#topo {
+    height: 150px;
+    background: url(../imagem/detalhe-topo.png) no-repeat right top;
+    padding-top: 20px;    
+}
+
+.logo {
+    width: 148px;
+    height: 59px;
+    background: url(../imagem/logo.png)no-repeat center;
+    text-indent: -3000px;
+}
+
+
+/* Barra de navagação */
+
+a:link, a:visited {
+    color: #B80441;
+    padding: 2px;
+}
+
+a:hover {
+    color: #1e1e1e;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+#topo ul {
+    margin-top: 40px;
+    background: #1e1e1e;
+    float: left;
+}
+
+#topo ul li {
+    float: left;    
+}
+
+#topo ul a {
+    font-size: 0.9em;
+    display: block;
+    padding: 0.5em 1.5em;
+    line-height: 2.1em;
+    margin-right: 10px;
+    text-decoration: none;
+    color: white;
+    background: url(../imagem/divisor.png) no-repeat left left;
+}
+
+#topo ul .primeiro a {
+    background: none;
+}
+
+#topo ul a:hover {
+    color: #920333;
+}
+
+body.home #navegacao a#home,
+body.brasil #navegacao a#brasil,
+body.internacional #navegacao a#internacional,
+body.economia #navegacao a#economia,
+body.saude #navegacao a#saude,
+body.ciencia #navegacao a#ciencia,
+body.fotos #navegacao a#fotos
+{
+    color: white;
+    background: #B80441;
+    cursor: text;
+}
+
+/* Configura layout de tres colunas */
+
+#conteudo {
+    margin-top: 90px;
+    background: #B80441;
+}
+
+#primario {
+    width: 270px;
+    margin: 0 0 20px 195px;
+    float: left;
+}
+
+#duas-colunas #primario {
+    width: 555px;
+}
+
+#uma-coluna #primario {
+    width: 750px;
+    margin: 0 0 20px 0;
+}
+
+#secundario {
+    width: 270px;
+    margin: 0 0 20px 15px;
+    float: left;
+}
+#lateral {
+    width: 180px; 
+    margin: 0 0 20px -750px;
+    float: left;
+}
+
+/*Caixa*/
+
+.caixa {
+    margin: 10px 0;
+    padding: 5px;
+    background: #f3f3f3 url(../imagem/fundo-caixa.png);    
+}
+
+h2 {
+    font-size: 1em;
+    background: #920333;
+    color: white;
+    padding: 5px;
+}
+
+.caixa-conteudo {
+    background: white;
+    padding: 5px;
+    margin-top: 5px;
+}
+
+/* Formatar menus laterais */
+
+#lateral ul a {
+    font-size: 0.9em;
+    padding: 3px;
+    display: block;
+    line-height: 30px;
+    color: #1e1e1e;
+    text-decoration: none;
+    border-bottom: 1px solid white;
+}
+
+#lateral ul a:hover {
+    background: white url(../imagem/marcador.png) no-repeat left center;
+    padding-left: 25px; 
+    color: #B80441;
+}
+
+/* Formatando formulários */
+
+label {
+    display: block;
+    cursor: pointer;
+}
+
+input {
+    padding: 5px;
+    width: 125px;
+    font-size: 0.9em;
+    background-color: white;
+}
+
+input.submit {
+    width: 80px;
+    color: white;
+    background-color: #920333;
+    border: 2px solid #B80441;
+}
+
+/*Formatando imagens*/
+
+/*img{
+    border: 2px solid #B80441;    
+} */
+
+img.imagem-principal {
+    width: 98%;
+    border: 3px solid #B80441;
+}
+
+/*Formatando cabeçalhos */
+
+h3 {
+    text-transform: uppercase;
+    display: inline;
+    font-size: 0.8em;
+    padding: 5px;
+}
+
+.destaque h3 {
+    background: #1e1e1e;
+    color: #f3f3f3;
+}
+
+.entrevista h3 {
+    background: #B80441;
+    color: #f3f3f3;
+}
+
+/*Formatando lista de notícias*/
+
+#lista-noticias li{
+    padding: 2px;
+    border-bottom: 1px solid #920333;
+    height: 62px;
+}
+
+#lista-noticias li a img{
+    float: left;
+    margin: 5px;
+}
+
+/*Link*/
+#lista-noticias li a {
+    text-decoration: none;
+}
+
+/*h3 que está dentro do link*/
+#lista-noticias li a h3{
+    font-size: 0.7em;
+    padding: 0;
+    color: #B80441;
+}
+
+/*p que está dentro do link*/
+#lista-noticias li a  p{
+    font-size: 0.7em;
+    color: #1e1e1e;
+}
+
+#lista-noticias li:hover{
+    background: #eee;
+    cursor: pointer;
+}
+
+/*Rodape*/
+
+#container-rodape {
+    background: #1e1e1e;
+    padding: 20px;
+}
+
+#rodape {
+    width: 750px;
+    max-width: 0 auto;
+    color: white;
+}
